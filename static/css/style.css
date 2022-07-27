@@ -6,30 +6,32 @@ body {
     height: 100%
 }
 body {
-    background-color: #c3c5dd;
+    background-color: #fcfcfc;
 } 
 
 .content {
     max-width: 600px;
-    height: 100px;
     margin: 0 auto;
-    border-left: 1px solid rgb(197, 33, 33);
-    border-right: 1px solid rgb(206, 25, 25);
+    border: 1px solid black;
+
 }
 /*
 post
 ***********/
-
+.content header{
+    display: flex;
+    border-bottom: 1px solid black;
+}
 .post_form {
     padding: 20px 40px;
-    border-bottom: 1px solid #aa1414;
-    border: 1px solid #aa1414;
+    border-bottom: 1px solid #1421aa;
+    /* border: 1px solid #112cca; */
 }
 .post_form input {
     width: 70%;
     margin-bottom: 10px;
     padding: 10px;
-    border:1px solid rgb(63, 36, 36);
+    /* border:1px solid rgb(44, 47, 203); */
 }
 .posts li .menu_icon {
     width: 20px;
@@ -37,12 +39,13 @@ post
     top: 10px;
     right: 10px; 
 }
+
 .posts li .menu{
     display: none;
     position: absolute;
     top: 40px;
     right: 15px;
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
     background-color: white;
     padding:10px 15px;
     font-size:  13px;
@@ -63,8 +66,8 @@ post
 }
 .posts li{
     display: flex;
-    border-bottom: 1px solid rgba(237, 78, 4, 0.933);
-    border: 1px solid #aa1414;
+    border-top: 1px solid black;
+    /* border: 1px solid #2a1cc4; */
     padding: 20px 40px;
     list-style: none;
     position: relative;
