@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-
+{% load static %}
 <section class="content">
     <section class="post_form">
         Post Form
@@ -9,9 +9,13 @@
         <ul>
             {% for post in posts %}
             <li>
-                {{post.name}}<br>
-                {{post.created}}<br>
-                {{post.body}}<br>
+                <div class="logo" id ="l">
+                <img src="{% static 'img/user.png' %}" />
+                </div>
+                <div class="name_body">
+                <div class="name">{{post.name}}</div>
+                <div class="datetime">{{post.created}}</div>
+                <p>{{post.body}}</p>
             </li>
             {% endfor %}
         </ul>
