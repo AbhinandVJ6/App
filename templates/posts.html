@@ -1,36 +1,48 @@
 {% extends "base.html" %}
 {% block content %}
 {% load static %}
-
+<link rel="icon" type="img/png" href="img/techis-logo.png">
+</link>
 <section class="content">
     <header>
-        <h1 STYLE="color:#00ACEE">Twitter clone </h1>
-        <img class="twitter" src="{% static 'img/twitter.png' %}" style="width:8%;" />
+        <img class="twitter" src="{% static 'img/twitter.png' %}" style="width:8%; padding: 4px" />
+        <h2 style="color:#000608; font-weight:bold ;"> Home </h2>
+
     </header>
+
+
 
     <section class="post_form">
         <form action="/" method="POST">
             {% csrf_token %}
+            <img class="menu_icon js-menu-icon" src="{% static 'img/prfl.avif' %}"
+                style="width:112px; border: 24px solid #fafcfc; border-radius: 50%;" />
+            </link>
             <input type="text" name="name" placeholder="Name" required>
-            <textarea name="body" placeholder="Tell us anything" required></textarea>
-            <input class="submit" type="submit" value="post"
-                style="width: 74%; color: white; background-color: #00ACEE" />
+            <textarea name="body" placeholder="What's happening? " required></textarea>
+            <input class="submit" type="submit" value="Tweet"
+                style="width: 19%; float: right; color: white; background-color: #00ACEE" />
+            <input type="file" value="'choose file">
         </form>
     </section>
     <section class="posts">
         <ul>
             {% for post in posts %}
             <li>
+
                 <img class="menu_icon js-menu-icon" src="{% static 'img/menu.png' %}" />
                 <div class="menu">
+                    <a href="/edit/{{post.id}}/">Edit</a> <br>
                     <a href="/delete/{{post.id}}/">Delete</a>
+
                 </div>
                 <div class="logo">
-                    <img src="{% static 'img/user.png' %}" />
+                    <img src="{% static 'img/ima.jpeg' %}"
+                        style="width:100px; height: 99px; border: 6px solid #fafcfc; border-radius: 50%;" />
                 </div>
                 <div class="name_body">
                     <div class="name">{{post.name}}</div>
-                    <div class="datetime">{{post.created}}</div>
+                    <div class="datetime">{{post.created_at}}</div>
                     <p>{{post.body}}</p>
                     <!-- <a href ="/delete/{{ post.id }}/">Delete</a> -->
             </li>

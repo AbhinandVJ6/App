@@ -1,4 +1,5 @@
 from django.db import models
+# from cloudinary.model import cloudinaryField
 class Post(models.Model):
     class Meta(object):
         db_table = 'post'
