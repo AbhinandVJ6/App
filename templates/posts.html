@@ -13,7 +13,7 @@
 
 
     <section class="post_form">
-        <form action="/" method="POST">
+        <form action="/" method="POST" enctype="multipart/form-data">
             {% csrf_token %}
             <img class="menu_icon js-menu-icon" src="{% static 'img/prfl.avif' %}"
                 style="width:112px; border: 24px solid #fafcfc; border-radius: 50%;" />
