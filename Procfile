@@ -1,1 +1,2 @@
-web: gunicon django_forum.wsgi
+release: python manage.py migrate
+web: gunicorn django_forum.wsgi
