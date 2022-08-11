@@ -80,10 +80,10 @@ post
     list-style: none;
     position: relative;
 }
-.posts li .logo {
+/* .posts li .logo {
     flex-basis: 15%;
     
-}
+} */
 .posts li .logo img{
     width: 60%;
 }
