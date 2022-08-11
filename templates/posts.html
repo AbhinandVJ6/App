@@ -37,19 +37,19 @@
                     <a href="/edit/{{post.id}}/" style="color:#fafcfc;"> Edit </a> <br>
                     </div>
                     <div id="d" style="border-radius: 11px; background-color: #00ACEE;text-align: center; padding: 6px; ">
-                    <a href="/delete/{{post.id}}/" style="color:#fafcfc; font-size: 11px;">Delete</a>
+                    <a href="/delete/{{post.id}}/" style="color:#fafcfc; font-size: 11px; position: inherit;">Delete</a>
                     </div>
 
                 </div>
                 <div class="logo">
                     <img src="{% static 'img/ima.jpeg' %}"
-                        style="width:75px; height: auto; border: 6px solid #fafcfc; border-radius: 50%;" />
+                        style="width:75px; height: auto; border: 6px solid #fafcfc; border-radius: 50%; position: relative; bottom: 20px;" />
                 </div>
                 <div class="name_body">
-                    <div class="name">{{post.name}}</div>
-                    <div class="datetime">{{post.created_at}}</div>
+                    <div class="name"style="font-weight: bold; position: relative;bottom:7px">{{post.name}}</div>
+                    <div class="datetime" style="position:static; float:right ;">{{post.created_at}}</div>
                     <p>{{post.body}}</p>
-                    <img class="body-image" src="{{post.image.url}}" alt="" style="width:115%; position: relative; right: 66px; border-radius: 10%; border-radius:20px;"/>
+                    <img class="body-image" src="{{post.image.url}}" alt="" style="width:115%; float: right; border-radius: 10%; border-radius:20px;"/>
                     <div class="icon_list" style="position:relative ; top: 10px; right: 61px;">
                         <a href="/like/{{post.id}}"> <img src="/static/img/like.png" style="width:30px;" alt="like" />
                         </a>
