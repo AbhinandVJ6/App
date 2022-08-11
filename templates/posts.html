@@ -19,10 +19,11 @@
                 style="width:112px; border: 24px solid #fafcfc; border-radius: 50%;" />
             </link>
             <input type="text" name="name" placeholder="Name" required>
-            <textarea name="body" placeholder="What's happening? " required></textarea>
+            <textarea name="body" placeholder="What's happening? " required></textarea>'
+            <input type="file" id="files" name="image" required />
+
             <input class="submit" type="submit" value="Tweet"
                 style="width: 19%; float: right; color: white; background-color: #00ACEE" />
-            <input type="file" value="'choose file">
         </form>
     </section>
     <section class="posts">
@@ -44,7 +45,14 @@
                     <div class="name">{{post.name}}</div>
                     <div class="datetime">{{post.created_at}}</div>
                     <p>{{post.body}}</p>
-                    <!-- <a href ="/delete/{{ post.id }}/">Delete</a> -->
+                    <img class="body-image" src="{{post.image.url}}" alt="" style="width:100%"/>
+                    <div class="icon_list">
+                        <a href="/like/{{post.id}}"> <img src="/static/img/like.png" style="width:30px;" alt="like" />
+                        </a>
+                        {{ post.likes }}
+                    </div>
+                </div>
+
             </li>
             {% endfor %}
         </ul>

@@ -11,10 +11,10 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 import os
 from pathlib import Path
-# import cloudinary
-# import cloudinary.uploader
-# import cloudinary.api
-# import os
+import cloudinary
+import cloudinary.uploader
+import cloudinary.api
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'posts',
-    # 'cloudinary'
+    'cloudinary',
 ]
 
 MIDDLEWARE = [
@@ -140,6 +140,11 @@ os.makedirs(STATIC_ROOT, exist_ok=True)
 # Extra places for collectstatic to find static files.
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
+)
+cloudinary.config(
+    cloud_name="dylvifa4r",
+    api_key="287789997567126",
+    api_secret="smg3BKuRQIAhkXbEpFLmbOkGVt8",
 )
 
 # Default primary key field type
