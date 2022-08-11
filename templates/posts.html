@@ -33,8 +33,12 @@
 
                 <img class="menu_icon js-menu-icon" src="{% static 'img/menu.png' %}" />
                 <div class="menu">
-                    <a href="/edit/{{post.id}}/">Edit</a> <br>
-                    <a href="/delete/{{post.id}}/">Delete</a>
+                    <div id="e" style="border-radius: 11px; background-color: #00ACEE;text-align: center; padding:5px; position: relative; top: -3px;">
+                    <a href="/edit/{{post.id}}/" style="color:#fafcfc;"> Edit </a> <br>
+                    </div>
+                    <div id="d" style="border-radius: 11px; background-color: #00ACEE;text-align: center; padding: 6px; ">
+                    <a href="/delete/{{post.id}}/" style="color:#fafcfc; font-size: 11px;">Delete</a>
+                    </div>
 
                 </div>
                 <div class="logo">
