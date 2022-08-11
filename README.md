@@ -11,7 +11,7 @@ Check out [LIVE DEMO here!!](https://twitter-clone111.herokuapp.com/)
 
 
 
-<img width="1391" alt="Twitter-clone" src="https://user-images.githubusercontent.com/100840312/160105197-e22ba7e2-2994-4766-bac0-a0f79a4370a7.png">
+<img width="1391" alt="Twitter-clone" src="<img width="368" alt="image" src="https://user-images.githubusercontent.com/107241846/184101814-6b703036-7b08-42c1-863e-b594c55b6cdc.png">">
 
 
 
