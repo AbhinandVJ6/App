@@ -16,6 +16,7 @@ import cloudinary.uploader
 import cloudinary.api
 import os
 
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -31,6 +32,10 @@ SECRET_KEY = 'django-insecure-p-1bbf6p(ik-=km%8daunza*4q++dy4lmin+t2-w8hlkvkx0x^
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
+#changes made for new deployement process
+X_FRAME_OPTIONS = '*'
+CORS_ORIGIN_ALLOW_ALL = True
+CSRF_TRUSTED_ORIGINS = ['http://127.0.0.1:8000/']
 
 
 # Application definition
@@ -44,9 +49,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'posts',
     'cloudinary',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
