@@ -7,7 +7,7 @@ To make the project simple, we do not have a sign/login function.
 So there are not user accounts and follow function. You can challenge after you finish the course.
 Check out [LIVE DEMO here!!](/)
 
-# Screenshot
+## Screenshot
 ![image](https://user-images.githubusercontent.com/107241846/213099999-ca9956d4-2f20-4062-b77e-af9c9f528d24.png)
 
 # Tech used
