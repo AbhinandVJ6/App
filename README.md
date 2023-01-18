@@ -8,13 +8,7 @@ So there are not user accounts and follow function. You can challenge after you 
 Check out [LIVE DEMO here!!](/)
 
 # Screenshot
-![Screenshot 2023-01-18 at 11 45 42 AM](https://user-images.githubusercontent.com/107241846/213098968-598a1ea2-4f7c-47fb-8db6-905ba08cbfd2.png)
-
-
-
-imag
-
-
+![image](https://user-images.githubusercontent.com/107241846/213099999-ca9956d4-2f20-4062-b77e-af9c9f528d24.png)
 
 # Tech used
 * Html
