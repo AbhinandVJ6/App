@@ -47,7 +47,9 @@
                     <div class="datetime">{{post.created_at}}</div>
                     <p>{{post.body}}</p>
                     <div class="allign">
+                        {% if post.image %}
                         <img class="body-image" src="{{post.image.url}}" alt="" />
+                        {% endif %}
                     </div>
                     <div class="icon_list">
                         <a href="/like/{{post.id}}"> <img class="like" src="/static/img/like.png" alt="like" />
